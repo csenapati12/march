@@ -3,4 +3,7 @@ properties([parameters([choice(choices: ['dev', 'qa', 'prod'], description: 'Ple
 stage("DEV TEsting"){
 echo "Dev"
 }
+stage("Sonar"){
+echo "Sonar"
+}
 }
