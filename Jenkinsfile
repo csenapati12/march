@@ -6,10 +6,9 @@ node () {
 	}
 	
 	stage ('ant Build'){
-	 bat """
-	 set path=%path%;C:\\Program Files\\Java\\jdk1.8.0_191\\bin
-	 ant 
-	"""
+	 sh """
+	 ant
+	 """
 		
 	}
 
