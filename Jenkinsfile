@@ -6,8 +6,10 @@ node () {
 	}
 	
 	stage ('ant Build'){
-	sh label: '', script: 'ant'
-		
+	sh "
+		ant
+	"
+	
 	}
 
 		stage ('Email Notification') {
