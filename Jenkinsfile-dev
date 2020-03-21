@@ -1,4 +1,5 @@
 node(){
+properties([parameters([choice(choices: ['dev', 'qa', 'prod'], description: 'Please select env to deploy', name: 'ENV')])])
 stage("DEV TEsting"){
 echo "Dev"
 }
