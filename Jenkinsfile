@@ -6,9 +6,8 @@ node () {
 	}
 	
 	stage ('ant Build'){
-	sh "
-		ant
-	"
+	sh label: '', script: '''ant
+ls'''
 	
 	}
 
